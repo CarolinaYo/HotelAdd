@@ -1,0 +1,196 @@
+/* Core basic styling */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  /* preventitng padding to add to box size */
+  box-sizing: border-box;
+}
+/* Main Styling */
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* we need to add spacing back since we have removed all default margin.  from the design, we need bottom margin */
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+
+/* We also need paragraph margin top and bottom */
+p {
+  margin: 10px, 0;
+}
+
+/* Utility classes is for some that you use all around */
+/* we need width, this will make it some responsiveness with out media queries. */
+/* this overflow will allow background to always show */
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.text-primary {
+  color: #f7c08a;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #333;
+  padding: 13px 20px;
+  border: none;
+  /* we need to add cursor pointer to the btn, by the defaul, only the links has pointer but the button area does not. */
+  cursor: pointer;
+}
+
+.btn:hover {
+  /* this is adding hover state */
+  background: #f7c08a;
+  color: #333;
+}
+
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-primary {
+  background: #f7c08a;
+  color: #333;
+}
+
+/* Need utility clear float if using float in any styling*/
+.clr {
+  clear: both;
+}
+
+/* NAVBAR */
+#navbar {
+  background-color: #333;
+  color: #fff;
+  overflow: auto;
+  /* this will cover all of the text even with the setting of color white because the text is a link.   */
+}
+
+#navbar a {
+  color: #fff;
+}
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+}
+#navbar ul {
+  /* this will grab the entire list items, not individual */
+  list-style: none;
+  float: right;
+}
+#navbar ul li {
+  float: left;
+}
+#navbar ul li a {
+  /* since a link is not a block level element, we need to make it a block to occupy the entire parent witdh and have a padding or margin */
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+/* applying the same styling to multile element, the next target can be added with a coma separator and added directly after the tag either a . or # for class or id. */
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: #444;
+  color: #f7c08a;
+}
+
+/* SHOWCASE  */
+#showcase {
+  /* this is where to add the background */
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  /* this give it a height */
+  height: 600px;
+}
+
+#showcase .showcase-content {
+  color: #fff;
+  padding: 160px;
+  text-align: center;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+}
+#showcase .showcase-content p {
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+/* HOME INFO */
+/* --set the height of the entire section */
+#home-info {
+  height: 400px;
+}
+/* targeting the left img */
+#home-info .info-img {
+  float: left;
+  width: 50%;
+  background: url("../img/photo-1.jpg") no-repeat;
+  /* this set a minimum height of the image to the entire section height */
+  min-height: 100%;
+}
+
+#home-info .info-content {
+  /* ---set float and width of the content--- */
+  float: right;
+  width: 50%;
+  /* set height of content */
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+#home-info .info-content p {
+  padding-bottom: 30px;
+}
+
+/* Features */
+
+.box {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+.box i {
+  margin-bottom: 10px;
+}
+
+/* Main-Footer */
+
+#main-footer {
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding: 20px;
+}
