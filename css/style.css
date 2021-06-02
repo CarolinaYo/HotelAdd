@@ -251,7 +251,36 @@ p {
   opacity: 0.9;
 }
 
-/* CONTACT */
+/* CONTACT FORM*/
+#contact-form .form-group {
+  /* this target the form group to push each field down */
+  margin-bottom: 20px;
+}
+#contact-form label {
+  /* We are making the label to be on its own line, so it need to be a block element. */
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  /* text area by default is darker, to make it uniform, we set border, color and pattern this way. */
+  border: 1px #ddd solid;
+}
+
+/* This target just the text area */
+#contact-form textarea {
+  height: 200px;
+}
+
+/* Adding focus state (a pseudo selector) to target the outline of the input and text box then customized. There are default color, but this will match up to the theme */
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #f7c08a;
+}
 
 /* Main-Footer */
 
