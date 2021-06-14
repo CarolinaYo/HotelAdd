@@ -1,0 +1,33 @@
+/* removing float in navbar h1 and ul */
+#navbar .logo {
+  float: none;
+  text-align: center;
+}
+
+/* removing float on navbar ul and ul li */
+#navbar ul,
+#navbar ul li {
+  float: none;
+}
+
+/* removing padding so it wont' be so big gap */
+#navbar ul li a {
+  padding: 5px;
+  border-bottom: #444 dotted 1px;
+}
+/* Home info */
+#home-info .info-img {
+  display: none;
+}
+
+#home-info .info-content {
+  /* ---set float and width of the content--- */
+  float: none;
+  width: 100%;
+}
+/* Boxes */
+
+.box {
+  float: none;
+  width: 100%;
+}
