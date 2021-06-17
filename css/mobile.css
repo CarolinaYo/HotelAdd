@@ -1,3 +1,4 @@
+/* INDEX section MOBILE STYLE */
 /* removing float in navbar h1 and ul */
 #navbar .logo {
   float: none;
@@ -8,6 +9,16 @@
 #navbar ul,
 #navbar ul li {
   float: none;
+}
+
+/* SHOWCASE */
+#showcase {
+  height: 100%;
+}
+
+#showcase .showcase-content {
+  padding-top: 70px;
+  padding-bottom: 30px;
 }
 
 /* removing padding so it wont' be so big gap */
@@ -31,3 +42,27 @@
   float: none;
   width: 100%;
 }
+
+/* ABOUT section MOBILE STYLE */
+/* since we are taking out the style for both, we can do it at the same time. */
+#about-info .info-left,
+#about-info .info-right {
+  float: none;
+  width: 100%;
+}
+
+#about-info .info-right {
+  margin-top: 30px;
+}
+
+.l-heading {
+  text-align: center;
+}
+
+/* CONTACT */
+#contact-info .box {
+  border-bottom: #444 dotted 1px;
+}
+
+/* LANDSCAPE */
+/* so fa so good */
